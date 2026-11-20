@@ -1,4 +1,137 @@
+/*Header, Main, Footer Design*/
 body {
+    background-color: #101114;
+    border: 2px #F5F5F5 solid;
+    border-radius: 5px;
+
     font-family: arial, sans-serif;
-    margin: 0;
+
+    margin: 50px;
+}
+
+.hNav {
+    align-items: center;
+
+    border: 1px #B8BEC9 solid;
+    border-radius: 10px;
+
+    display: flex;
+
+    margin: 7px;
+}
+
+.hNav a:not(.logo) {
+    border-radius: 10px;
+
+    color: #F5F5F5;
+
+    margin-left: 40px;
+
+    padding: 5px 10px; 
+
+    text-decoration: none;
+}
+
+.sect1 {
+    background-color: #1b1f24;
+    border: 1px #B8BEC9 solid;
+    border-radius: 10px;
+}
+
+.sect1Button {
+    background-color: #D7192D;
+    border-radius: 10px;
+    border: none;
+
+    color: #f5f5f5;
+
+    font-weight: 780;
+
+    margin-bottom: 25px;
+    margin-left: 40px;
+    margin-top: 15px;
+
+    letter-spacing: 1px;
+
+    padding: 10px 25px;
+
+}
+.sect1 h1 {
+    font-size: 45px;
+
+    margin-bottom: 0;
+    margin-left: 40px;
+    margin-top: 0;
+}
+.sect1 p:first-child {
+    color: #F5F5F5;
+
+    margin-bottom: -10px;
+    margin-left: 40px;
+    margin-top: 30px;
+}   
+
+.sect1 p:nth-child(3){
+    color: #F5F5F5;
+
+    margin-bottom: 0;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.sect2 {
+    background-color: #1b1f24;
+    border: 1px #B8BEC9 solid;
+    border-radius: 10px;
+}
+
+.sect3 {
+    background-color: #1b1f24;
+    border: 1px #B8BEC9 solid;
+    border-radius: 10px;
+}
+
+.sect4 {
+    background-color: #1b1f24;
+    border: 1px #B8BEC9 solid;
+    border-radius: 10px;
+}
+
+.sect5 {
+    background-color: #1b1f24;
+    border: 1px #B8BEC9 solid;
+    border-radius: 10px;
+}
+
+.mainTitle {
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    transform: skew(-3deg);
+}
+
+.mainTitle span:first-child {
+    color: #f5b82e;
+}
+
+.mainTitle span:nth-child(2) {
+    color: #D7192D;
+}
+
+.mainTitle span:last-child {
+    color: #f5b82e;
+}
+/*Header Button Design*/
+
+.hNav a:not(.logo):hover {
+    background-color: #D7192D;
+
+    transition: background-color 0.3s ease;
+}
+
+.sect1Button:hover {
+    background-color: #f5b82e;
+    color: #101114;
+    transition: background-color 0.3s ease;
 }
