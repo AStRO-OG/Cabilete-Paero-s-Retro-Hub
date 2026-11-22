@@ -1,214 +1,95 @@
-/*Header, Main, Footer Design*/
 body {
     background-color: #101114;
-    border: 2px #F5F5F5 solid;
-    border-radius: 5px;
-
-    font-family: arial, sans-serif;
-
-    margin: 50px 150px 150px 150px;
-}
-
-.gameContainer {
-    display: grid;
-
-    font-family: verdana, sans-serif;
-
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-
-    margin-left: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-}
-
-.gameSlot {
-    background-color: #1b1f24;
-    border: 1px #B8BEC9 solid;
-    border-radius: 10px;
-    padding: 10px;
-    overflow: hidden;   
-}
-
-.gameSlot a {
-    color: #f5b82e;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.gameSlot a:hover {
-    color:#f5f5f5;
-
-    transition: color 0.3s ease;
-}
-.gameSlot h3 {
-    display: inline;
-    background-color: #D7192D;
-    border-radius: 15px;
-    padding: 5px 15px;
-}
-
-.gameSlot img {
-    display: block  ;
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 6px;
-}
-
-.gameSlot p:first-of-type {
-    font-weight: 600;
-}
-
-.hNav {
-    align-items: center;
-
-    border: 1px #B8BEC9 solid;
-    border-radius: 10px;
-
-    display: flex;
-
-    font-weight: 600;
-
-    margin: 7px;
-}
-
-.hNav a:not(.logo) {
-    border-radius: 10px;
-
-    color: #F5F5F5;
-
-    margin-left: 25px;
-
-    padding: 5px 10px; 
-
-    text-decoration: none;
-}
-
-.sect1 {
-    background-color: #1b1f24;
-    border: 1px #B8BEC9 solid;
-    border-radius: 10px;
-}
-
-.sect1Button {
-    background-color: #D7192D;
-    border-radius: 10px;
-    border: none;
-
     color: #f5f5f5;
-
-    font-weight: 780;
-
-    margin-bottom: 25px;
-    margin-left: 40px;
-    margin-top: 15px;
-
-    letter-spacing: 1px;
-
-    padding: 10px 25px;
-
-}
-.sect1 h1 {
-    font-size: 45px;
-
-    margin-bottom: 0;
-    margin-left: 40px;
-    margin-top: 0;
+    font-family: verdana, sans-serif;
 }
 
-.sect1 p:first-child {
-    color: #F5F5F5;
-
-    margin-bottom: -10px;
-    margin-left: 40px;
-    margin-top: 30px;
-}   
-
-.sect1 p:nth-child(3){
-    color: #F5F5F5;
-
-    margin-bottom: 0;
-    margin-left: 40px;
-    margin-top: 5px;
-}
-
-.sect2 {
-    background-color: #1b1f24;
-    border: 1px #B8BEC9 solid;
+.container {
+    border: 0.1px solid #f5f5f5;
     border-radius: 10px;
-
-    color: #F5F5F5;
-
-    margin-top: 7px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 7px;
 }
 
-.sect2 h2 {
-    margin-left: 40px;
-}
-
-.sect3 {
-    background-color: #1b1f24;
-    border: 1px #B8BEC9 solid;
+/*Header container styles*/
+.header {
+    align-items: center;
+    border: 1px solid #f5f5f5;
     border-radius: 10px;
-}
-
-.sect4 {
-    background-color: #1b1f24;
-    border: 1px #B8BEC9 solid;
-    border-radius: 10px;
-}
-
-.sect5 {
-    background-color: #1b1f24;
-    border: 1px #B8BEC9 solid;
-    border-radius: 10px;
-}
-
-.slot1Text {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.mainImage {
-    align-items: center ;
     display: flex;
-    position: absolute;
-    right: 35%;
-    top: 13%;
+    margin-top: 5% auto;
 }
 
-.mainTitle {
-    font-weight: 800;
-
+.mainNav a {
+    color: #f5f5f5;
+    font-weight: 500;
     letter-spacing: 1px;
+    margin-left: 20px;
+    text-decoration: none;
 
-    transform: skew(-3deg);
 }
 
-.mainTitle span:first-child {
+/*Main container styles*/
+.main {
+    align-items: center;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    margin-left: -7px;
+    margin-right: -7px;
+}
+
+.mainText {
+    flex: 1;
+    margin-left: 30px;
+}
+
+.mainText h2 {
+    font-size: 40px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    margin-top: -18px;
+    transform:skew(-4deg);
+}
+
+.mainText h2 span:first-child, span:last-child {
     color: #f5b82e;
 }
 
-.mainTitle span:nth-child(2) {
-    color: #D7192D;
+.mainText h2 span:not(:first-child, :last-child) {
+    color: #d7192d;
 }
 
-.mainTitle span:last-child {
-    color: #f5b82e;
+.mainText p:nth-child(3) {
+    margin-bottom: 0;
 }
 
-/*Header Button Design*/
-
-.hNav a:not(.logo):hover {
-    background-color: #D7192D;
-
-    transition: background-color 0.3s ease;
+.mainText p:last-of-type{
+    margin-top: 1px;
 }
 
-.sect1Button:hover {
-    background-color: #f5b82e;
-    color: #101114;
-    transition: background-color 0.3s ease;
+.mainText button {
+    background-color: #d7192d;
+    border: none;
+    border-radius: 10px;
+    color: #f5f5f5;
+    font-weight: 800;
+    margin-top: 10px;
+    padding: 10px 25px;
+}
+
+.mainPictureContainer {
+    flex: 0 1 40%;
+    max-width: 600px;
+}
+
+.mainPictureContainer img {
+    display: block;
+    height: auto;
+    width: 100%;
 }
