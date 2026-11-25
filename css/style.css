@@ -137,39 +137,113 @@ body {
     min-height: 70%;
 }
 .featureContainer {
-    display: grid;
+    background-color: #1b1f24;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
     margin: 0 auto;
-    margin-left: 20px;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    margin-top: 7px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr auto;
 }
 
 .featureGamesTitle {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    margin-left: 20px;
+}
+
+.featureGamesTitle a {
+    color: #f5b82e;
+    text-decoration: none;
 }
 
 .featureLink {
-    border: 1px solid #f5f5f5;
+    background-color: #101114;
+    border: 1px inset #f5f5f5;
     border-radius: 10px;
     grid-row: span 2;
-    margin: 7px 10px;
+    height: 55%;
+    margin: 0 5px 5px;
+    padding: 10px;
+}
+
+.featureLink h2 {
+    text-align: center;
+    font-size: 20px;
 }
 
 .featureLink a {
     align-items: center;
-    border-bottom: 1px solid #1b1f24;
+    border-bottom: 1px solid #B8BEC9;
     color: #f5f5f5;
     display: flex;
     gap: 10px;
     justify-content: space-between;
-    margin-left: 15%;
+    margin-left: 0 5%;
+    margin-bottom: 10px;
     text-decoration: none;
 }
 
+.featureMiniText {
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    margin: 30px auto auto auto;
+}
+
+.featureMiniText p:first-of-type {
+    color: #f5b82e;
+    font-size: 13px;
+    text-align: center;
+}
+
+.featureMiniText p:last-child {
+    font-size: 13px;
+    text-align: center;
+}
 .item2 {
     align-self: center;
+}
+
+.item3 {
+    display: flex;
+}
+
+.item3 div {
+    border: 2px solid #f5f5f5;
+    border-radius: 10px;
+    margin: 0 8px;
+    margin-bottom: 10px;
+}
+
+.item3 p {
+    margin-top: -8px;
+    margin-left: 10px;
+}
+
+.item3 div p:nth-child(odd) {
+    background-color: #d7192d;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5px 8px;
+}
+.item3 img{
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.gameSlot img {
+    border-radius: 10px;
+    height: auto;
+    padding-right: auto;
+    width: 100%;
+}
+
+.consoleContainer {
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    margin-top: 7px;
 }
 /*Header Nav Buttons*/
 .headerNav a:hover {
