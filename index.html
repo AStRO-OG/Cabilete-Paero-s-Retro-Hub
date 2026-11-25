@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Paero's Retro Hub</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <div class="container">
         <header class="header">
-            <div class="webLogo">
-                <img src="images/Web_logo.png" alt="Paero's Retro Hub">
+            <div class="headerLogo">
+                <img src="images/Web_logo.png">             
             </div>
-            <div class="navContainer">
-                <nav class="mainNav">
-                    <a href="#home">Home</a>
-                    <a href="#browse">Browse Games</a>
-                    <a href="#Guide">Guide & Tutorials</a>
-                    <a href="#patches">Patches</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                </nav>
+            <nav class="headerNav">
+                <a href="#home">Home</a>
+                <a href="#browse">Browse Games</a>
+                <a href="#guide">Guides & Tutorials</a>
+                <a href="#patch">Patches</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="searchBar">
+                <input type="text" placeholder="⌕ Search games...">
             </div>
         </header>
-        <main class="main">
-            <div class="sect1">
-                <div class="sect1_1">
+        <section class="heroContainer">
+            <div class="hero">
+                <div class="heroText">
                     <p>WELCOME TO</p>
                     <h2>
                         <span>PAERO'S</span>
@@ -35,26 +34,30 @@
                     </h2>
                     <p>Discover and play retro games, homebrew projects,</p>
                     <p>patches, and guides &mdash; all in one place.</p>
-                    <button>Browse Games &rarr;</button>
+                    <button>Browse Games &RightArrow;</button>
                 </div>
-                <div class="mainPictureContainer">
-                    <img src="images/MainBody-Logo.png" alt="Console pictures">
-                </div>
-            </div>
-            <div class="sect2">
-                <div class="sect2_1">
-                    <h2>Featured Games</h2>
-                    <p>View all &rarr;</p>
-                </div>
-                <div class="sect2GameSlot">
-                    <div class="sect2SlotImage">
-                        <img src="images/Featured_Game1.jpg" alt="Pokemon Fire Red">
-                        <img src="images/Featured_Game1.jpg" alt="Pokemon Fire Red">
-                        <img src="images/Featured_Game1.jpg" alt="Pokemon Fire Red">
-                    </div>
+                <div class="heroImage">
+                    <img src="images/MainBody-Logo.png">
                 </div>
             </div>
-        </main>
+        </section>
+        <section class="featureContainer">
+            <div class="featureGamesTitle item1">
+                <h2>Feature Games</h2>
+                <a href="#browse">View all &rightarrow;</a>
+            </div>
+            <div class="featureLink item2">
+                <h2>Quick Links</h2>
+                <a href="#">Emulator downloads</a>
+                <a href="#">Compatability guide</a>
+                <a href="#">Patch instructions</a>
+                <a href="#">FAQ</a>
+                <a href="#">Community resource</a>
+            </div>
+            <div class="gameContainer">
+                <div class="gameSlot item3"></div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
